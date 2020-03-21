@@ -1,4 +1,6 @@
 package ru.job4j.condition;
+import java.util.Scanner;
+
 
 public class Point {
 
@@ -13,7 +15,18 @@ public class Point {
     }
 
     public static void main(String[] args) {
-        double result = Point.distance(0, 0, 2, 0);
-        System.out.println("result (0, 0) to (2, 0) " + result);
+
+        Scanner userInput = new Scanner(System.in);
+        int x1, y1, x2, y2;
+        System.out.println("input point x1 and press enter");
+        x1 = userInput.nextInt();
+        System.out.println("input point y1 and press enter");
+        y1 = userInput.nextInt();
+        System.out.println("input point x2 and press enter");
+        x2 = userInput.nextInt();
+        System.out.println("input point y2 and press enter");
+        y2 = userInput.nextInt();
+        double result = Point.distance(x1, y1, x2, y2);
+        System.out.println("result: " + result);
     }
 }
