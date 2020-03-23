@@ -8,8 +8,8 @@ public class Point {
 
        double step1 = x2 - x1;
        double step2 = y2 - y1;
-       double step3 = Math.pow(step1, 2) ;
-       double step4 = Math.pow(step2, 2) ;
+       double step3 = Math.pow(step1, 2);
+       double step4 = Math.pow(step2, 2);
        double step5 = step3 + step4;
        return Math.sqrt(step5);
     }
