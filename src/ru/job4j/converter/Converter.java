@@ -6,15 +6,21 @@ public class Converter {
         return value / 70;
     }
 
-    public static int  rubleToDollar(int value) {
-        return value / 60;
+    public static float  rubleToDollar(float value) {
+        return value / 56;
     }
 
     public static void main(String[] args) {
-        int euros = Converter.rubleToEuro(140);
-        System.out.println("140 rubles are " + euros + " euros.");
-        int dollars = Converter.rubleToDollar(140);
-        System.out.println("140 rubles are " + Math.round(dollars) + " dollars.");
+        int in = 140;
+        int expected = 2;
+        int out = rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are 2. Test result : " + passed);
 
+        int inDollars = 140;
+        float expectedDollars = 2.5f;
+        float outDollars = rubleToDollar(in);
+        boolean passedDollars = expectedDollars == outDollars;
+        System.out.println("140 rubles are 2.5 dollars. Test result : " + passedDollars);
     }
 }
