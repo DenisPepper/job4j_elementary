@@ -2,13 +2,12 @@ package ru.job4j.calculator;
 
 /**
  * Calculator
- * @author NoName
+ * @author Denis Pepper (denis21vekplus@yandex.ru)
  */
 public class Calculator {
 
     /**
      * main
-     * @author NoName
      * @param args - args
      */
     public static void main(String[] args) {
