@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-import com.sun.source.tree.IfTree;
-
 public class Turn {
 
     public static int[] back(int[] array) {
