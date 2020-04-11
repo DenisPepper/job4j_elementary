@@ -9,13 +9,12 @@ public class SwitchArray {
         return array;
     }
 
-    @SuppressWarnings("checkstyle:WhitespaceAround")
     public static int[] swapBorder(int[] array) {
-        int temp = array[0];
-        int maxIndex = array.length - 1;
-        array[0] = array[maxIndex];
-        array[maxIndex] = temp;
-        return array;
+        //int temp = array[0];
+        //int maxIndex = array.length - 1;
+        //array[0] = array[maxIndex];
+        //array[maxIndex] = temp;
+        return swap(array, 0, array.length - 1);
     }
 
     public static void main(String[] args) {
