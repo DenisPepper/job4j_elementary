@@ -1,9 +1,10 @@
-package ru.job4j.condition;
+package ru.job4j;
 
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
 
 import org.junit.Test;
+import ru.job4j.condition.ThreeMax;
 
 public class ThreeMaxTest {
 

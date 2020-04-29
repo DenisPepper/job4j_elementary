@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Point {
 
     public static double distance(int x1, int y1, int x2, int y2) {
-
        double step1 = x2 - x1;
        double step2 = y2 - y1;
        double step3 = Math.pow(step1, 2);
@@ -15,7 +14,6 @@ public class Point {
     }
 
     public static void main(String[] args) {
-
         Scanner userInput = new Scanner(System.in);
         int x1, y1, x2, y2;
         System.out.println("input point x1 and press enter");

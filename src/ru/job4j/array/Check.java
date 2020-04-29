@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-import com.sun.jdi.event.BreakpointEvent;
-
 public class Check {
 
     public static boolean mono(boolean[] data) {
