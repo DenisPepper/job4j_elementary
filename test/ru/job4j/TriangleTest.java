@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import ru.job4j.condition.Point;
 import ru.job4j.condition.Triangle;
-
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 

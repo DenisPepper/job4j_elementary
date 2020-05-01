@@ -25,4 +25,10 @@ public class MaxTest {
         int result = Max.max(5, 5);
         assertThat(result, is(5));
     }
+
+    @Test
+    public void whenFirstMoreOthers() {
+        int result = Max.max(7, 4, 1, 3);
+        assertThat(result, is(7));
+    }
 }
