@@ -6,14 +6,25 @@ import static java.lang.Math.pow;
 public class Point {
     private int x;
     private int y;
+    private int z;
 
     public Point(int first, int second) {
         this.x = first;
         this.y = second;
     }
 
-    public double distanceTo(Point anotherPoint) {
-        return sqrt(pow(anotherPoint.x - this.x, 2) + pow(anotherPoint.y - this.y, 2));
+    public Point(int first, int second, int third) {
+        this.x = first;
+        this.y = second;
+        this.z = third;
+    }
+
+    public double distanceTo(Point point) {
+        return sqrt(pow(point.x - this.x, 2) + pow(point.y - this.y, 2));
+    }
+
+    public double distanceTo3d(Point point) {
+        return sqrt(pow(point.x - this.x, 2) + pow(point.y - this.y, 2) + pow(point.z - this.z, 2));
     }
 
     public static void main(String[] args) {
