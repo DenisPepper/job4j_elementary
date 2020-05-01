@@ -28,6 +28,4 @@ public class Cat {
         black.setFood("рыба");
         black.showSettings();
     }
-
-
 }
