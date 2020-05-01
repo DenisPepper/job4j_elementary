@@ -12,8 +12,8 @@ public class Point {
         this.y = second;
     }
 
-    public double distanceTo(Point b) {
-        return sqrt(pow(b.x - this.x, 2) + pow(b.y - this.y, 2));
+    public double distanceTo(Point anotherPoint) {
+        return sqrt(pow(anotherPoint.x - this.x, 2) + pow(anotherPoint.y - this.y, 2));
     }
 
     public static void main(String[] args) {
