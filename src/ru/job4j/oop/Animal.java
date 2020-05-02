@@ -2,9 +2,10 @@ package ru.job4j.oop;
 
 public class Animal {
 
+    public Animal(String name) {
+    }
+
     public Animal() {
-        super();
-        System.out.println("load Animal");
     }
 
 }
