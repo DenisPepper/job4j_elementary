@@ -19,12 +19,15 @@ public class Triangle {
         double ac = a.distanceTo(c);
         double bc = b.distanceTo(c);
         if (exist(ab, ac, bc)) {
-            double p = (ab + ac + bc) / 2;
+            double p = this.perimeter(ab, ac, bc);
             answer = sqrt(p * (p - ab) * (p - ac) * (p - bc));
         }
         return answer;
     }
 
+    public double perimeter(double ab, double ac, double bc) {
+        return (ab + ac + bc) / 2;
+    }
 
     /**
     Нужно проверить, что ab + ac > bc и ac + bc > ab и ab + bc > ac - в этом случае треугольник существует.
