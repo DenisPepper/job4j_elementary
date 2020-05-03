@@ -6,4 +6,7 @@ public class Predator extends Animal {
         super(name);
     }
 
+    public Predator() {
+    }
+
 }
