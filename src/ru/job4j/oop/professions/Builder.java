@@ -1,7 +1,7 @@
 package ru.job4j.oop.professions;
 
 public class Builder extends Engineer {
-    public String typeOfConstructionWork;
+    private String typeOfConstructionWork;
 
     public Builder(String name, String surname, String education, String birthday, String qualification, String typeOfConstructionWork) {
         super(name, surname, education, birthday, qualification);
