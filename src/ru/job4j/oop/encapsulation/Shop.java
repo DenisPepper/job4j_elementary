@@ -5,9 +5,10 @@ import java.awt.*;
 public class Shop {
 
     public Product[] delete(Product[] products, int index) {
-       for (int counter = index; counter < products.length; counter++) {
-           products[counter] = counter < products.length - 1 ? products[counter + 1] : null;
+       for (int counter = index; counter < products.length - 1; counter++) {
+           products[counter] = products[counter + 1];
        }
+       products[products.length - 1] = null;
        return products;
     }
 
