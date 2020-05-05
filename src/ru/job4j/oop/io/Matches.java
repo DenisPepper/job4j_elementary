@@ -16,8 +16,8 @@ public class Matches {
             index = nextPlayer ? 1 : 0;
             nextPlayer = !(nextPlayer);
             int userAction = 0;
-            while (userAction < 1 || userAction > 3 || userAction > sum) {
-                System.out.println(players[index] + " введите количество спичек (от 1 до 3): ");
+            while (userAction != 1 && userAction != 2 && userAction != 3 || userAction > sum) {
+                System.out.print(players[index] + " введите количество спичек (от 1 до 3): ");
                 userAction = Integer.valueOf(input.nextLine());
             }
             sum = sum - userAction;
