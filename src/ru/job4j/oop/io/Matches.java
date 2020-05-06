@@ -21,8 +21,9 @@ public class Matches {
                 userAction = Integer.valueOf(input.nextLine());
             }
             sum = sum - userAction;
-            System.out.println("В игре осталось " + sum + " шт.");
+            System.out.println("В игре осталось " + sum + " шт. ");
         }
-        System.out.println("Игра окончена!");
+        index = nextPlayer ? 1 : 0;
+        System.out.print(players[index] + " выиграл! Игра окончена.");
     }
 }
