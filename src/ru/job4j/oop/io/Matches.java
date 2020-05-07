@@ -26,4 +26,4 @@ public class Matches {
         index = nextPlayer ? 1 : 0;
         System.out.print(players[index] + " выиграл! Игра окончена.");
     }
-}
+} 
