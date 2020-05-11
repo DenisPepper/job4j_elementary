@@ -5,9 +5,9 @@ public class Fact {
     public static void main(String[] args) {
     }
 
-    public int calc(int n) {
+    public static int calc(int n) {
         if (n < 0) {
-            throw new IllegalArgumentException("the argument must be greater than zero");
+            throw new IllegalArgumentException("the argument must be greater than 0");
         }
         int rsl = 1;
         for (int index = 1; index <= n; index++) {
